@@ -22,7 +22,7 @@ const Login = () => {
 
     if (isLoginSuccessful) {
       // Redirect to the dashboard page
-      navigate('/home');
+      navigate("/home");
     } else {
       // Set notification for unsuccessful login
       setNotification("Wrong password. Please try again.");

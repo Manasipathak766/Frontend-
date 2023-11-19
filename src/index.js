@@ -10,11 +10,12 @@ import reportWebVitals from './reportWebVitals';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Login />}>
-      <Route path='home' element={<Home />} />
-      <Route path='employee' element={<Employee />} />
+      <Route path='/home' element={<Home />} />
+      <Route path='/employee' element={<Employee />} />
     </Route>
   )
-)
+);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <RouterProvider router={router}/>
